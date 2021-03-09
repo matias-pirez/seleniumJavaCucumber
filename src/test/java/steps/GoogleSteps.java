@@ -14,12 +14,13 @@ public class GoogleSteps {
 
     @When("^I enter a search criteria$")
     public void enterSearchCriteria(){
+        google.enterSearchCriteria("Matias Pirez");
 
     }
 
     @And("^click in the search button$")
     public void clickSearchButton(){
-
+        google.clickSearchButton();
     }
 
     @Then("^the results match the criteria$")
