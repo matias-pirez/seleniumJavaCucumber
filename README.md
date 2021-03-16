@@ -2,7 +2,7 @@
 
 ## Tecnologías y herramientas utilizadas
 
-![Framework utilizado](https://i.imgur.com/iO84mHX.png)
+![Framework utilizado](https://i.imgur.com/iO84mHX.png){width=300}
 
 * **Java** como lenguaje de programación
 * **Selenium WebDriver** para interactuar con el browser de forma automatizada
