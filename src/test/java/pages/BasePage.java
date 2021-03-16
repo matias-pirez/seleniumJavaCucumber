@@ -13,6 +13,7 @@ public class BasePage {
     private static  WebDriverWait wait;
     static {
         ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("user-data-dir=/resources/chromedriver");
         driver = new ChromeDriver(chromeOptions);
         wait = new WebDriverWait(driver,10);
     }
@@ -22,6 +23,10 @@ public class BasePage {
     }
     public static void navigateTo(String url){
         driver.get(url);
+    }
+
+    public static void closeDriver(){
+        driver.quit();
     }
 
     private WebElement Find(String locator){
