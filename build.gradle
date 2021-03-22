@@ -16,6 +16,7 @@ dependencies {
     compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
     compile group: 'io.cucumber', name: 'cucumber-java', version: '4.2.0'
     testImplementation 'io.cucumber:cucumber-junit:4.2.0'
+    compile group: 'com.aventstack', name: 'extentreports-cucumber4-adapter', version: '1.0.7'
 
 }
 
