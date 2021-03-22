@@ -2,11 +2,11 @@
 
 ## Tecnologías y herramientas utilizadas
 
-![Framework utilizado](https://i.imgur.com/iO84mHX.png){width=300}
+![Framework utilizado](https://i.imgur.com/iO84mHX.png)
 
 * **Java** como lenguaje de programación
 * **Selenium WebDriver** para interactuar con el browser de forma automatizada
-    Selenium es un conjunto de API's open source que podemos utilizar para interactuar con el navegador. Solamente sirve para aplicaciones web.
+Selenium es un conjunto de API's open source que podemos utilizar para interactuar con el navegador. Solamente sirve para aplicaciones web.
 * **Cucumber** para estructurar los tests mediante Features y su implementación por steps definitions
 * **Gradle** como building tool, para compilar el proyecto
 * **Visual Studio Code** como IDE, editor de código
@@ -20,8 +20,8 @@
 4. **Descargar extensiones en VSCode**: Gradle Language Support y Gradle Tasks en VSCode.
 5. **Descargar Gradle**: la última versión desde [la web oficial](https://gradle.org/releases/). Descomprimir, guardarlo en C:/ y renombrar la carpeta a "gradle".
 6. **Configurar variables de entorno de Windows**
-    Añadimos C:\gradle\bin a la variable PATH
-    AAñadimos tambien la ruta donde guardamos el chromedriver al PATH si aun no lo estaba
+Añadimos C:\gradle\bin a la variable PATH
+Añadimos tambien la ruta donde guardamos el chromedriver al PATH si aun no lo estaba
 
 
 ## Notas realizadas
