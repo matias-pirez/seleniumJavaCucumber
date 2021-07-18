@@ -30,3 +30,8 @@ Añadimos tambien la ruta donde guardamos el chromedriver al PATH si aun no lo e
 
 [Documentación oficial](https://chromedriver.chromium.org/capabilities)
 Acá nos dice como usar un custom profile de chrome para la ejecución, lo que permite por ejemplo utilizar el caché. Probar si esto sirve para el caso de que necesitamos la misma página para todos los test(ej un login) y al ejecutarlo de cero demora mucho en cargar.
+
+* **Visual Reports**: Herramienta [Extent Reports](https://www.extentreports.com/). 
+
+## Known resolved issues
+* **Failed to instantiate class**. Correr en modo debug y revisar si **chormedriver está actualizado**. La última vez me pasó que no corría y era porque no era compatible con la version de chrome.
