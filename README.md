@@ -35,3 +35,8 @@ Acá nos dice como usar un custom profile de chrome para la ejecución, lo que p
 
 ## Known resolved issues
 * **Failed to instantiate class**. Correr en modo debug y revisar si **chormedriver está actualizado**. La última vez me pasó que no corría y era porque no era compatible con la version de chrome.
+* **Run tests with tags from CLI:** CucumberOptions no me reconoce los parametros de tags. Issue a resolver.
+
+## Next Steps
+* Agregar mas escenarios para Meli
+* Usar Examples para pasar los parametros desde los feature files

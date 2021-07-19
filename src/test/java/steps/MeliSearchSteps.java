@@ -1,5 +1,7 @@
 package steps;
 
+import java.util.List;
+//import org.junit.Assert;
 import cucumber.api.java.en.*;
 import pages.MeliHome;
 
@@ -28,9 +30,19 @@ public class MeliSearchSteps {
     
 
     @Then("^the user sees the products matching the search criteria$")
-        public void validateResults() throws Throwable{
-
-        }
-    
-
-}
+        public void validateSearchResults() throws AssertionError{
+            List<String> list = home.getSearchResults();
+            /*for (String e: list){
+                boolean textIsThere = e.contains("Teclado");
+                Assert.assertTrue(textIsThere);
+            }*/
+            for (int i = 0; i < 3; i++){
+                boolean textIsThere = list.get(i).contains("Teclado");
+                if(textIsThere){
+                    System.out.println("PASSED: The search criteria was found in the first 3 results.");
+                } else {
+                    throw new Error("FAILED: The search criteria wasn't found in the first 3 results.");
+                    }
+                }
+            }
+    }

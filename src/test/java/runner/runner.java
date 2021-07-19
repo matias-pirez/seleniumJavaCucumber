@@ -11,6 +11,7 @@ import pages.BasePage;
     features = "src/test/resources/features",
     monochrome = true,
     glue = "steps",
+    tags = {"@Meli"},
     plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-reports.json"}
 )
 

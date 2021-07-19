@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 //import java.util.List;
 
 import org.openqa.selenium.By;
@@ -42,5 +44,13 @@ public class BasePage {
     public void writeText(String locator, String text){
         Find(locator).clear();
         Find(locator).sendKeys(text);
+    }
+
+    public String getTextFromElement(String locator){
+        return Find(locator).getText();
+    }
+
+    public List<WebElement> getAllElements(String locator){
+        return driver.findElements(By.className(locator));
     }
 }
